@@ -40,3 +40,8 @@ Route::get('/peliculas', function () {
 
     return view('peliculas',compact('peliculas'));
 });
+
+
+Route::get('/actores', 'ActorController@directory');
+
+Route::get('/actor/{id}', 'ActorController@show');
